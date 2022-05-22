@@ -1,0 +1,15 @@
+@media only srceen and(width:360px){
+    html{font-size: 14.4px;}
+}
+@media only srceen and(width:375px){
+    html{font-size: 15px;}
+}
+@media only srceen and(width:414px){
+    html{font-size: 16.56px;}
+}
+@media only srceen and(width:280px){
+    html{font-size: 11.2px;}
+}
+@media only srceen and(width:540px){
+    html{font-size: 21.6px;}
+}
