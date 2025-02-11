@@ -22,7 +22,7 @@ http://171.117.183.51:9003//hls/10/index.m3u8
 #EXTINF:-1 ,CCTV-10科教
 http://171.117.183.51:9003//hls/11/index.m3u8
 #EXTINF:-1 ,CCTV-11戏曲
-http://175.18.189.238:9998/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+https://www.freetv.top/migu/667987558.m3u8?migutoken=6f0aba8bb528e29d40340f6930899fd9d7af9fd013c355a61146d5528e6ac297c46d65935ffcea640455737c324736dd8a29f22083f5450155873c9e89d3a4fb8b6b92b897a7dc62ad55fd891d
 #EXTINF:-1 ,CCTV-12社会与法
 http://171.117.183.51:9003//hls/13/index.m3u8
 #EXTINF:-1 ,CCTV-13新闻
@@ -30,11 +30,13 @@ http://171.117.183.51:9003//hls/14/index.m3u8
 #EXTINF:-1 ,CCTV-14少儿
 http://171.117.183.51:9003//hls/15/index.m3u8
 #EXTINF:-1 ,CCTV-15音乐
-http://175.18.189.238:9998/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1&authid=0
+https://www.freetv.top/migu/673168223.m3u8?migutoken=ad38294ea17b61fb4e3582dd4b38fe6903d520cf9c77df387069a12c1d35acd569d2a80ad10f3f759e3130a7cf82f39f4700e10050fa4438027fb9151be012733eede3d7a5db53a58345272ef8
 #EXTINF:-1 ,CCTV-16奥林匹克
 http://171.117.183.51:9003//hls/17/index.m3u8
 #EXTINF:-1 ,CCTV-17农业农村
 http://171.117.183.51:9003//hls/18/index.m3u8
+#EXTINF:-1 ,山东卫视
+http://171.117.183.51:9003//hls/41/index.m3u8
 #EXTINF:-1 ,安徽卫视
 http://171.117.183.51:9003//hls/21/index.m3u8
 #EXTINF:-1 ,北京卫视
@@ -47,14 +49,10 @@ http://171.117.183.51:9003//hls/22/index.m3u8
 http://171.117.183.51:9003//hls/23/index.m3u8
 #EXTINF:-1 ,东南卫视
 http://171.117.183.51:9003//hls/24/index.m3u8
-#EXTINF:-1 ,甘肃卫视
-http://39.164.180.36:19901/tsfile/live/0141_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 ,广东卫视
 http://171.117.183.51:9003//hls/26/index.m3u8
 #EXTINF:-1 ,广西卫视
 http://171.117.183.51:9003//hls/27/index.m3u8
-#EXTINF:-1 ,贵州卫视
-http://175.18.189.238:9998/tsfile/live/0120_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 ,海南卫视
 http://171.117.183.51:9003//hls/28/index.m3u8
 #EXTINF:-1 ,河北卫视
@@ -62,11 +60,11 @@ http://171.117.183.51:9003//hls/29/index.m3u8
 #EXTINF:-1 ,河南卫视
 http://171.117.183.51:9003//hls/30/index.m3u8
 #EXTINF:-1 ,黑龙江卫视
-http://182.32.159.129:9933/tsfile/live/0143_1.m3u8?key=txiptv&playlive=1&authid=0
+http://171.117.183.51:9003//hls/31/index.m3u8
 #EXTINF:-1 ,湖北卫视
 http://171.117.183.51:9003//hls/32/index.m3u8
 #EXTINF:-1 ,湖南卫视
-http://175.18.189.238:9998/tsfile/live/0117_2.m3u8?key=txiptv&playlive=1&authid=0
+http://171.117.183.51:9003//hls/33/index.m3u8
 #EXTINF:-1 ,吉林卫视
 http://171.117.183.51:9003//hls/34/index.m3u8
 #EXTINF:-1 ,江苏卫视
@@ -75,14 +73,8 @@ http://171.117.183.51:9003//hls/35/index.m3u8
 http://171.117.183.51:9003//hls/36/index.m3u8
 #EXTINF:-1 ,辽宁卫视
 http://171.117.183.51:9003//hls/37/index.m3u8
-#EXTINF:-1 ,青海卫视
-http://182.32.159.129:9933/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 ,山东卫视
-http://171.117.183.51:9003//hls/41/index.m3u8
 #EXTINF:-1 ,山西卫视
 http://171.117.183.51:9003//hls/19/index.m3u8
-#EXTINF:-1 ,陕西卫视
-http://39.164.180.36:19901/tsfile/live/0136_1.m3u8?key=txiptv&playlive=0&authid=0
 #EXTINF:-1 ,深圳卫视
 http://171.117.183.51:9003//hls/43/index.m3u8
 #EXTINF:-1 ,四川卫视
@@ -93,3 +85,6 @@ http://171.117.183.51:9003//hls/45/index.m3u8
 http://218.13.14.6:60050/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 ,浙江卫视
 http://171.117.183.51:9003//hls/49/index.m3u8
+
+
+
