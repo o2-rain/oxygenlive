@@ -1,35 +1,35 @@
 .cctv{
-    width: 1000px;
-    height: 530px;
+    width: 62.5rem;
+    height: 40rem;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .title{
-    height: 60px;
-    margin-left: 45px;
+    height: 3.75rem;
+    margin-left: 2.8125rem;
 }
 .tit1{
     float: left;
 }
 .tit2{
     float: left;
-    font-size: 19px;
-    line-height: 40px;
-    margin-left: 10px;
-    width: 700px;
+    font-size: 1.1875rem;
+    line-height: 2.5rem;
+    margin-left: .625rem;
+    width: 43.75rem;
 }
 .tv{
-    height: 90px;
-    width: 200px;
-    border-radius: 5px;
+    height: 5.625rem;
+    width: 12.5rem;
+    border-radius: .3125rem;
     float: left;
-    margin-top: 25px;
-    margin-left: 40px;
-    box-shadow: 1px 2px 4px #bdbdbd;
+    margin-top: 1.5625rem;
+    margin-left: 2.5rem;
+    box-shadow: .0625rem .125rem .25rem #bdbdbd;
     background-color: white;
     text-align: center;
-    line-height: 90px;
-    font-size: 15px;
+    line-height: 5.625rem;
+    font-size: .9375rem;
     color: black;
     transform: scale(1);
     transition: transform 0.5s ease 0s;
@@ -38,14 +38,14 @@
     transform: scale(1.05);
   }
 .local{
-    width: 1000px;
-    height: 990px;
+    width: 62.5rem;
+    height: 71.875rem;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 .sdtv{
-    width: 1000px;
-    height: 580px;
+    width: 62.5rem;
+    height: 36.25rem;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
