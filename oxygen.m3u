@@ -35,8 +35,6 @@ https://www.freetv.top/migu/673168223.m3u8?migutoken=ad38294ea17b61fb4e3582dd4b3
 http://171.117.183.51:9003//hls/17/index.m3u8
 #EXTINF:-1 ,CCTV-17农业农村
 http://171.117.183.51:9003//hls/18/index.m3u8
-#EXTINF:-1 ,山东卫视
-http://171.117.183.51:9003//hls/41/index.m3u8
 #EXTINF:-1 ,安徽卫视
 http://171.117.183.51:9003//hls/21/index.m3u8
 #EXTINF:-1 ,北京卫视
@@ -73,6 +71,8 @@ http://171.117.183.51:9003//hls/35/index.m3u8
 http://171.117.183.51:9003//hls/36/index.m3u8
 #EXTINF:-1 ,辽宁卫视
 http://171.117.183.51:9003//hls/37/index.m3u8
+#EXTINF:-1 ,山东卫视
+http://171.117.183.51:9003//hls/41/index.m3u8
 #EXTINF:-1 ,山西卫视
 http://171.117.183.51:9003//hls/19/index.m3u8
 #EXTINF:-1 ,深圳卫视
@@ -85,6 +85,3 @@ http://171.117.183.51:9003//hls/45/index.m3u8
 http://218.13.14.6:60050/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 ,浙江卫视
 http://171.117.183.51:9003//hls/49/index.m3u8
-
-
-
