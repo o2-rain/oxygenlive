@@ -51,7 +51,7 @@ img {
 }
 
 /*平板竖屏适配*/
-@media (min-width: 500px){
+@media screen and (min-width:700px) and (orientation: portrait){
     .cctv{
         width: 42rem;
         height: 50rem;
@@ -103,7 +103,7 @@ img {
 }
 
 /*平板横屏适配*/
-@media (min-width: 1000px){
+@media screen and (min-width:700px) and (orientation: landscape){
     .cctv{
         width: 38rem;
         height: 29rem;
@@ -114,7 +114,7 @@ img {
     .title{
         height: 4rem;
         margin-left: 2rem;
-        display: flex;  /*元素处于同一行*/
+        display: flex; 
     }
     .tit1{
         float: left;
