@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cctv{
+    width: 44rem;
+    height: 121rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0;
+}
+.title{
+    height: 7rem;
+    margin-left: 3rem;
+    display: flex;  /*元素处于同一行*/
+}
+.tit1{
+    float: left;
+    margin-top: 1.5rem;
+}
+img {
+    width: 4rem;
+}
+.tit2{
+    float: left;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-left: 1.5rem;
+}
+.tv{
+    height: 10rem;
+    width: 18.5rem;
+    border-radius: 0.4rem;
+    float: left;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    box-shadow: 0.2rem 0.4rem 0.4rem #bdbdbd;
+    background-color: white;
+    text-align: center;
+    line-height: 10rem;
+    font-size: 1.8rem;
+    color: black;
+}
+.local{
+    width: 44rem;
+    height: 235rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+/*平板适配*/
+@media (min-width: 700px){
+    .cctv{
+        width: 42rem;
+        height: 50rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+    .title{
+        height: 5rem;
+        margin-left: 2rem;
+        display: flex;  /*元素处于同一行*/
+    }
+    .tit1{
+        float: left;
+        margin-top: 1.5rem;
+    }
+    img {
+        width: 2.5rem;
+    }
+    .tit2{
+        float: left;
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        margin-left: 1rem;
+    }
+    .tv{
+        height: 6rem;
+        width: 12rem;
+        border-radius: 0.4rem;
+        float: left;
+        margin-top: 1.5rem;
+        margin-left: 1.5rem;
+        box-shadow: 0.2rem 0.4rem 0.4rem #bdbdbd;
+        background-color: white;
+        text-align: center;
+        line-height: 6rem;
+        font-size: 1rem;
+        color: black;
+    }
+    .local{
+        width: 42rem;
+        height: 100rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+}  
