@@ -39,7 +39,7 @@ img {
     background-color: white;
     text-align: center;
     line-height: 10rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: black;
 }
 .local{
@@ -50,8 +50,8 @@ img {
     padding: 0;
 }
 
-/*平板适配*/
-@media (min-width: 700px){
+/*平板竖屏适配*/
+@media (min-width: 500px){
     .cctv{
         width: 42rem;
         height: 50rem;
@@ -85,7 +85,7 @@ img {
         float: left;
         margin-top: 1.5rem;
         margin-left: 1.5rem;
-        box-shadow: 0.2rem 0.4rem 0.4rem #bdbdbd;
+        box-shadow: 0.1rem 0.2rem 0.2rem #bdbdbd;
         background-color: white;
         text-align: center;
         line-height: 6rem;
@@ -100,4 +100,56 @@ img {
         padding: 0;
     }
 
-}  
+}
+
+/*平板横屏适配*/
+@media (min-width: 1000px){
+    .cctv{
+        width: 38rem;
+        height: 29rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+    .title{
+        height: 4rem;
+        margin-left: 2rem;
+        display: flex;  /*元素处于同一行*/
+    }
+    .tit1{
+        float: left;
+        margin-top: 1rem;
+    }
+    img {
+        width: 1.8rem;
+    }
+    .tit2{
+        float: left;
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-left: 0.8rem;
+    }
+    .tv{
+        height: 4rem;
+        width: 8rem;
+        border-radius: 0.4rem;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        box-shadow: 0.1rem 0.2rem 0.2rem #bdbdbd;
+        background-color: white;
+        text-align: center;
+        line-height: 4rem;
+        font-size: 0.6rem;
+        color: black;
+    }
+    .local{
+        width: 38rem;
+        height: 52rem;
+        margin: auto;
+        margin-top: 1.5rem;
+        padding: 0;
+    }
+
+} 
