@@ -51,7 +51,7 @@ img {
 }
 
 /*平板竖屏适配*/
-@media screen and (min-width:700px) and (orientation: portrait){
+@media screen and (min-width:500px) and (orientation: portrait){
     .cctv{
         width: 42rem;
         height: 50rem;
@@ -103,7 +103,7 @@ img {
 }
 
 /*平板横屏适配*/
-@media screen and (min-width:700px) and (orientation: landscape){
+@media screen and (min-width:500px) and (orientation: landscape){
     .cctv{
         width: 38rem;
         height: 29rem;
