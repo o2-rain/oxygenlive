@@ -11,6 +11,9 @@
 .tit1{
     float: left;
 }
+img {
+    width: 2.5rem;
+}
 .tit2{
     float: left;
     font-size: 1.1875rem;
@@ -36,16 +39,10 @@
 }
 .tv:hover {
     transform: scale(1.05);
-  }
+}
 .local{
     width: 62.5rem;
     height: 71.875rem;
-    margin: auto;
-    margin-top: 3.125rem;
-}
-.sdtv{
-    width: 62.5rem;
-    height: 36.25rem;
     margin: auto;
     margin-top: 3.125rem;
 }
