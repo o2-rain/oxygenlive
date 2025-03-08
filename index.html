@@ -7,18 +7,24 @@
     <title>OxygenLive</title>
     <link rel="stylesheet" type="text/css" href="index.css">
     <script type="text/javascript">
+        // 移动端适配
         var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
         var browser = navigator.userAgent.toLowerCase();
         var isMobile = false;
         for (var i=0; i<mobileAgent.length; i++){ 
-        if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true;location.href = 'mobile/index.html';break; } }
+            if (browser.indexOf(mobileAgent[i])!=-1){ 
+                isMobile = true;
+                location.href = 'mobile/index_mobile.html';
+                break; 
+            } 
+        }
     </script>
 </head>
 
 <body bgcolor="#eeeeee">
     <div class="cctv">
         <div class="title">
-            <div class="tit1"><img src="icon/cctv.png" width="40px"></div>
+            <div class="tit1"><img src="icon/cctv.png"></div>
             <div class="tit2">央视频道</div>
         </div>
         <div>
@@ -114,7 +120,7 @@
     </div>
     <div class="local">
         <div class="title">
-            <div class="tit1"><img src="icon/local.png" width="40px"></div>
+            <div class="tit1"><img src="icon/local.png"></div>
             <div class="tit2">地方频道</div>
         </div>
         <div>
@@ -293,6 +299,6 @@
             </a>
         </div>
     </div>
-   
+    
 </body>
 </html>
