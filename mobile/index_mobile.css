@@ -1,155 +1,310 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-.cctv{
-    width: 44rem;
-    height: 121rem;
-    margin: auto;
-    margin-top: 2rem;
-    padding: 0;
-}
-.title{
-    height: 7rem;
-    margin-left: 3rem;
-    display: flex;  /*元素处于同一行*/
-}
-.tit1{
-    float: left;
-    margin-top: 1.5rem;
-}
-img {
-    width: 4rem;
-}
-.tit2{
-    float: left;
-    margin-top: 1.5rem;
-    font-size: 2rem;
-    line-height: 4rem;
-    margin-left: 1.5rem;
-}
-.tv{
-    height: 10rem;
-    width: 18.5rem;
-    border-radius: 0.4rem;
-    float: left;
-    margin-top: 2.5rem;
-    margin-left: 2.5rem;
-    box-shadow: 0.2rem 0.4rem 0.4rem #bdbdbd;
-    background-color: white;
-    text-align: center;
-    line-height: 10rem;
-    font-size: 1.6rem;
-    color: black;
-}
-.local{
-    width: 44rem;
-    height: 235rem;
-    margin: auto;
-    margin-top: 2rem;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OxygenLive</title>
+    <link rel="stylesheet" type="text/css" href="index_mobile.css">
+    <script type="text/javascript">
+        // 屏幕适配
+        function setRem() {
+            // 获取屏幕的宽度
+            var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            
+            // 通过js动态改变html根节点字体大小
+            var html = document.getElementsByTagName('html')[0];
+            html.style.fontSize = clientWidth / 50 + 'px';
+        }
+        // window.onresize 浏览器被重置大小执行事件
+        window.onresize = setRem;
 
-/*平板竖屏适配*/
-@media screen and (min-width:500px) and (orientation: portrait){
-    .cctv{
-        width: 42rem;
-        height: 50rem;
-        margin: auto;
-        margin-top: 1.5rem;
-        padding: 0;
-    }
-    .title{
-        height: 5rem;
-        margin-left: 2rem;
-        display: flex;  /*元素处于同一行*/
-    }
-    .tit1{
-        float: left;
-        margin-top: 1.5rem;
-    }
-    img {
-        width: 2.5rem;
-    }
-    .tit2{
-        float: left;
-        margin-top: 1.5rem;
-        font-size: 1.3rem;
-        line-height: 2.5rem;
-        margin-left: 1rem;
-    }
-    .tv{
-        height: 6rem;
-        width: 12rem;
-        border-radius: 0.4rem;
-        float: left;
-        margin-top: 1.5rem;
-        margin-left: 1.5rem;
-        box-shadow: 0.1rem 0.2rem 0.2rem #bdbdbd;
-        background-color: white;
-        text-align: center;
-        line-height: 6rem;
-        font-size: 1rem;
-        color: black;
-    }
-    .local{
-        width: 42rem;
-        height: 100rem;
-        margin: auto;
-        margin-top: 1.5rem;
-        padding: 0;
-    }
+        const html = document.documentElement;
+        const width = html.clientWidth;  // 获取窗口宽度
+        html.style.fontSize = width / 50 + 'px';
 
-}
-
-/*平板横屏适配*/
-@media screen and (min-width:500px) and (orientation: landscape){
-    .cctv{
-        width: 38rem;
-        height: 29rem;
-        margin: auto;
-        margin-top: 1.5rem;
-        padding: 0;
-    }
-    .title{
-        height: 4rem;
-        margin-left: 2rem;
-        display: flex; 
-    }
-    .tit1{
-        float: left;
-        margin-top: 1rem;
-    }
-    img {
-        width: 1.8rem;
-    }
-    .tit2{
-        float: left;
-        margin-top: 1rem;
-        font-size: 1rem;
-        line-height: 1.8rem;
-        margin-left: 0.8rem;
-    }
-    .tv{
-        height: 4rem;
-        width: 8rem;
-        border-radius: 0.4rem;
-        float: left;
-        margin-top: 1rem;
-        margin-left: 1rem;
-        box-shadow: 0.1rem 0.2rem 0.2rem #bdbdbd;
-        background-color: white;
-        text-align: center;
-        line-height: 4rem;
-        font-size: 0.6rem;
-        color: black;
-    }
-    .local{
-        width: 38rem;
-        height: 52rem;
-        margin: auto;
-        margin-top: 1.5rem;
-        padding: 0;
-    }
-
-} 
+    </script>
+</head>
+<body bgcolor="#eeeeee">
+    <div class="cctv">
+        <div class="title">
+            <div class="tit1"><img src="../icon/cctv.png"></div>
+            <div class="tit2">央视频道</div>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv1hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-1综合</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv2hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-2财经</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv3hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-3综艺</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv4hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-4中文国际</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv5hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-5体育</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv5phd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-5+体育赛事</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv6hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-6电影</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv7hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-7国防军事</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv8hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-8电视剧</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv9hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-9记录</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv10hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-10科教</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv11hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-11戏曲</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv12hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-12社会与法</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv13hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-13新闻</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv14hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-14少儿</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv15hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-15音乐</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv16hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-16奥林匹克</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cctv17hd.m3u8" target="_blank" class="text">
+                <div class="tv">CCTV-17农业农村</div>
+            </a>
+        </div>
+    </div>
+    <div class="local">
+        <div class="title">
+            <div class="tit1"><img src="../icon/local.png"></div>
+            <div class="tit2">地方频道</div>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/ahhd.m3u8" target="_blank" class="text">
+                <div class="tv">安徽卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/btv1hd.m3u8" target="_blank" class="text">
+                <div class="tv">北京卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="http://liveout.btzx.com.cn/62ds9e/yil08g.m3u8" target="_blank" class="text">
+                <div class="tv">兵团卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/cqhd.m3u8" target="_blank" class="text">
+                <div class="tv">重庆卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/dfhd.m3u8" target="_blank" class="text">
+                <div class="tv">东方卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/dnhd.m3u8" target="_blank" class="text">
+                <div class="tv">东南卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/gstv.m3u8" target="_blank" class="text">
+                <div class="tv">甘肃卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/gdhd.m3u8" target="_blank" class="text">
+                <div class="tv">广东卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/gxhd.m3u8" target="_blank" class="text">
+                <div class="tv">广西卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/gzhd.m3u8" target="_blank" class="text">
+                <div class="tv">贵州卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/lyhd.m3u8" target="_blank" class="text">
+                <div class="tv">海南卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/hebtv.m3u8" target="_blank" class="text">
+                <div class="tv">河北卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/hnhd.m3u8" target="_blank" class="text">
+                <div class="tv">河南卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/hljhd.m3u8" target="_blank" class="text">
+                <div class="tv">黑龙江卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/hbhd.m3u8" target="_blank" class="text">
+                <div class="tv">湖北卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/hunanhd.m3u8" target="_blank" class="text">
+                <div class="tv">湖南卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/jlhd.m3u8" target="_blank" class="text">
+                <div class="tv">吉林卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/jshd.m3u8" target="_blank" class="text">
+                <div class="tv">江苏卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/jxhd.m3u8" target="_blank" class="text">
+                <div class="tv">江西卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/lnhd.m3u8" target="_blank" class="text">
+                <div class="tv">辽宁卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/nmtv.m3u8" target="_blank" class="text">
+                <div class="tv">内蒙古卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/nxtv.m3u8" target="_blank" class="text">
+                <div class="tv">宁夏卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/qhtv.m3u8" target="_blank" class="text">
+                <div class="tv">青海卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/sdhd.m3u8" target="_blank" class="text">
+                <div class="tv">山东卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/sxrtv.m3u8" target="_blank" class="text">
+                <div class="tv">山西卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/sxhd.m3u8" target="_blank" class="text">
+                <div class="tv">陕西卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/sshd.m3u8" target="_blank" class="text">
+                <div class="tv">三沙卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/szhd.m3u8" target="_blank" class="text">
+                <div class="tv">深圳卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/schd.m3u8" target="_blank" class="text">
+                <div class="tv">四川卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="http://111.61.208.131:9019/hls/35/index.m3u8" target="_blank" class="text">
+                <div class="tv">天津卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/xztv.m3u8" target="_blank" class="text">
+                <div class="tv">西藏卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/xjtv.m3u8" target="_blank" class="text">
+                <div class="tv">新疆卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/ybtv.m3u8" target="_blank" class="text">
+                <div class="tv">延边卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/yntv.m3u8" target="_blank" class="text">
+                <div class="tv">云南卫视</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://tv.bfsu.edu.cn/hls/zjhd.m3u8" target="_blank" class="text">
+                <div class="tv">浙江卫视</div>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>
+</body>
+</html>
