@@ -8,13 +8,13 @@
     height: 3.75rem;
     margin-left: 2.8125rem;
 }
-.tit1{
+.title_left{
     float: left;
 }
 img {
     width: 2.5rem;
 }
-.tit2{
+.title_right{
     float: left;
     font-size: 1.1875rem;
     line-height: 2.5rem;
@@ -32,14 +32,32 @@ img {
     background-color: white;
     text-align: center;
     line-height: 5.625rem;
-    font-size: .9375rem;
+    font-size: .95rem;
     color: black;
     transform: scale(1);
     transition: transform 0.5s ease 0s;
 }
 .tv:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*放大倍数*/
+    background: teal;  /*背景色*/
+    color: white; /*文字颜色*/
+    font-weight: 600; /*文字加粗*/
 }
+.down{
+    display: none;
+}
+.tv:hover .down{
+    display: block;
+}
+.tv:hover .up{
+    display: none;
+}
+.text{
+    font-size: 0.95rem;
+    color: white;
+    text-decoration:none;
+}
+
 .local{
     width: 62.5rem;
     height: 71.875rem;
